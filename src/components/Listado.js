@@ -7,8 +7,8 @@ function Listado({products}) {
     <div>
       <section id="prodListCont">
         <p id="prodListTitle">Listado de Productos</p>
-        {products.map( ({id, name, photo2, description}) => {
-          return <Producto key={id} name={name} img={photo2} description={description}/>
+        {products.slice(0, 9).map( ({id, name, photo2}) => {
+          return <Producto key={id} name={name} img={photo2} />
         })}
       </section>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Producto({id, name, img, description}) {
+function Producto({name, img}) {
   return (
     <div className="cart_products-container">
       <div className="products-container_images-description_row">
@@ -13,7 +13,7 @@ function Producto({id, name, img, description}) {
         </div>
         <div className="cart_row-description-container">
           <span className="cart_row-description-description">
-            {description}
+            {name}
           </span>
         </div>
       </div>
